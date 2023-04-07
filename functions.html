@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>function</title>
+	<script>
+		greeting()
+		function greeting(){
+			console.log("good mornimg")
+			console.log("have a nice day")
+			console.log("have a wonderful day")
+		}
+
+		//we should call the function seperately then only we will get the output
+		//no issue whether it is top or bottom, but calling a function is mandatory
+
+		function add(){
+			console.log("it is a add function")
+		}
+		add()
+
+		//passing the data to function
+		function sendData(m,o){
+			console.log(m,o)
+		}
+		sendData(243536,376726)
+
+		function info(m){
+			console.log(m)
+		}
+		info("javascript")
+		
+		function allTogether(a,b){
+			console.log("addition value is:",a+b)
+			console.log("subtraction value is:",a-b)
+			console.log("division value is:",a/b)
+			console.log("modulus value is:",a%b)
+		}
+		allTogether(10,2)
+
+		//getting the info from function
+		function getData(){
+			return "true data"
+		}
+		var r=getData()
+		console.log(r)
+
+		//local variable(lies inside the function)
+		function dataOne(){
+			var h=2000;
+			console.log("value of h is:",h)
+		}
+		dataOne()
+		
+		//Global variable(lies outside the function)
+		var k="java"
+		function data(){
+			console.log(k)
+		}
+		data()
+	</script>
+</head>
+<body>
+
+</body>
+</html>

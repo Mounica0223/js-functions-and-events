@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>events</title>
+	<!-- <style>
+		p:hover{
+			color: blue;
+		}
+	</style> -->
+	<script>
+		function first(){
+			console.log("javascript event")
+		}
+		function second(){
+			alert("this is from alert")
+		}
+		function third(){
+			console.log("output depend on change")
+		}
+	</script>
+</head>
+<body>
+	<button onclick="first()">Submit</button>
+	<p onmouseover="second()">This is all about hover effect</p>
+	<input type="text" onchange="third()">
+</body>
+</html>
